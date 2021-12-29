@@ -7,8 +7,7 @@ public class Main {
         int clientOS = 1;
         if (clientOS < 1) {
             System.out.println("Установите версию приложения для iOS по ссылке");
-        }
-        if (clientOS >= 1) {
+        } else if (clientOS >= 1) {
             System.out.println("Установите версию приложения для Android по ссылке");
         }
 
@@ -19,8 +18,12 @@ public class Main {
         if (clientDeviceYear >= 2015 && clientDeviceOS == 'A') {
             System.out.println("Зайдите в Play Market для установки приложения");
         } else {
-            System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        }
+            if (clientDeviceYear >= 2015 && clientDeviceOS == 'I') {
+            System.out.println("Зайдите в App Store для установки проложения");
+        } else {
+                System.out.println("Установите облегченную версию приложения по ссылке");
+            }
+            }
 
 
 
