@@ -14,11 +14,16 @@ public class Main {
 
         //exercise №2
         int clientDeviceYear = 2015;
-        char clientDeviceOS = 'A';
-        if (clientDeviceYear >= 2015 && clientDeviceOS == 'A') {
+        int clientDeviceOS = 1;
+        if (clientDeviceOS == 1) {
+            if (clientDeviceYear >= 2015) {
+
             System.out.println("Зайдите в Play Market для установки приложения");
         } else {
-            if (clientDeviceYear >= 2015 && clientDeviceOS == 'I') {
+            System.out.println("Установите облегченную версию приложения по ссылке");
+        }
+        } else {
+            if (clientDeviceOS != 1) {
             System.out.println("Зайдите в App Store для установки проложения");
         } else {
                 System.out.println("Установите облегченную версию приложения по ссылке");
